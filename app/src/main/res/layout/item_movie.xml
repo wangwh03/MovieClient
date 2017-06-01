@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <ImageView android:id="@+id/poster"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      tools:src="@mipmap/ic_launcher"
+      style="@style/PosterImage"
+  />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:text="Title Movie"
+      android:id="@+id/title"
+      android:layout_alignParentTop="true"
+      android:layout_toRightOf="@+id/poster"
+      style="@style/title"/>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:text="Captain Jack Sparrow is pursued by an old rival, Captain Salazar, who along with his crew of ghost pirates has escaped from the Devil's Triangle, and is determined to kill every pirate at sea. Jack seeks the Trident of Poseidon, a powerful artifact that grants its possessor total control over the seas, in order to defeat Salazar."
+      android:id="@+id/overview"
+      android:layout_below="@+id/title"
+      android:layout_toRightOf="@+id/poster"
+      android:layout_alignBottom="@+id/poster"
+      android:ellipsize="end"
+      android:maxLines="5"
+      style="@style/overview"/>
+
+</RelativeLayout>
